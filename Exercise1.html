@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise  1</title>
+</head>
+<body>
+    <div class="container mt-3" style="background-color:blueviolet">
+        <h2>Advertising Estimate</h2>
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          <div class="mb-3">
+              <label for="cname">Name/Company Name<sup style="color: rgb(24, 58, 167);">*</sup></label>
+              <input type="text" class="form-control" id="cname"  name="cname" maxlength="10">
+            </div>
+          <div class="mb-3">
+            <label for="email">Email<sup style="color: red;">*</sup></label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class ="mb-3">
+              <label for="sdate">Ad Start Date<sup style="color: rgb(21, 21, 129);">*</sup></label>
+              <input type="date" class="form-control" id="sdate" name="sdate">
+          </div>
+          <div class ="mb-3">
+              <label for="edate">Ad End Date<sup style="color: yellow;">*</sup></label>
+              <input type="date" class="form-control" id="edate" name="edate">
+          </div>
+          <h4>Adverstising size (pixels)</h4>
+          <div class="mb-3">
+              <div class="radio">
+                  <label><input type="radio" name="optradio">100px</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="optradio">150px</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="optradio" >200px</label>
+                </div>    
+            </div>
+            <h5>Which sites would you like to advertise on?</h5>
+      <div class="mb-3">
+          <div class="checkbox">
+              <label><input type="checkbox" value="">Facebook</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Refractor</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">lnstagram</label>
+            </div>
+      </div>
+      <div class="mb-3">
+          <label for="wname">Website to be adverstised<sup style="color: red;">*</sup></label>
+          <input type="text" class="form-control" id="wname"  name="wname">
+        </div>
+          <div class="mb-3">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="3" id="comment"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="display_alert()">Submit</button>
+        </form>
+      </div>
+</body>
+</html>
